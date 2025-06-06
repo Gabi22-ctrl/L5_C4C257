@@ -1,10 +1,3 @@
-cjson_dep = declare_dependency(
-  include_directories: include_directories('/usr/include'),
-  dependencies: [],
-  link_args: ['-lcjson']
-)
+project('LAB5', 'c')
 
-executable('archivo_json',
-  ['main.c', 'json.c'],
-  dependencies: cjson_dep
-)
+subdir('src')
